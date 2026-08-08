@@ -1,0 +1,31 @@
+# Node.js dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Java build directories & IDE setups
+backend/target/
+backend/.mvn/
+backend/.project
+backend/.classpath
+backend/.settings/
+backend/bin/
+backend/*.iml
+
+# Python Virtual Environments & outputs
+ai-service/.venv/
+ai-service/__pycache__/
+ai-service/*.pyc
+ai-service/.pytest_cache/
+
+# IDEs & System Settings
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+*.log
+.env

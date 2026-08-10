@@ -170,6 +170,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    background: #0b0f19;
+    color: #f3f4f6;
   }
 }
 
@@ -223,3 +225,21 @@
 .movie-overlay {
   background: linear-gradient(to top, #0b0f19 0%, rgba(11, 15, 25, 0.8) 40%, rgba(11, 15, 25, 0) 100%);
 }
+
+.glass-input { background: rgba(22,29,48,.8); border: 1px solid rgba(255,255,255,.12); color: #f3f4f6; outline: none; }
+.glass-input:focus { border-color: rgba(52,211,153,.8); box-shadow: 0 0 0 3px rgba(52,211,153,.12); }
+
+.cinema-hero {
+  padding: 4.25rem 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(110, 231, 183, .15);
+  border-radius: 1.5rem;
+  background: radial-gradient(circle at 16% 0%, rgba(16, 185, 129, .18), transparent 30%), linear-gradient(135deg, #0a1721, #101527 62%, #071016);
+}
+.cinema-hero h1 { margin: 0; font-size: clamp(2.25rem, 5vw, 3.7rem); line-height: 1.08; font-weight: 800; letter-spacing: -.05em; }
+.cinema-hero p { max-width: 40rem; margin: 1rem auto 1.7rem; color: #aec1c5; line-height: 1.6; }
+.cinema-sparkle { margin-bottom: .75rem; color: #86efc7; font-size: 2.25rem; }
+.cinema-prompt { display: flex; gap: .5rem; max-width: 42rem; margin: auto; padding: .45rem; border: 1px solid rgba(166, 237, 217, .25); border-radius: .85rem; background: rgba(10, 25, 35, .72); box-shadow: 0 14px 36px rgba(0,0,0,.25); }
+.cinema-prompt input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: #f4f8f7; padding: .6rem .75rem; }
+.cinema-prompt button { border: 0; border-radius: .6rem; background: #72ddbd; color: #062118; padding: .7rem 1rem; font-weight: 700; cursor: pointer; }
+@media (max-width: 520px) { .cinema-hero { padding: 3rem 1rem; } .cinema-prompt { flex-direction: column; } }
